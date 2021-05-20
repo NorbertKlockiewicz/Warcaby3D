@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.js"></script>
+    <script src="three.js"></script>
+    <script src="game.js"></script>
+    <script src="net.js"></script>
+    <script src="pool.js"></script>
+    <script src="Pionek.js"></script>
+    <script src="Manager.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cantarell|Cinzel|Odibee+Sans&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <h1 id="waitingRoom">Oczekiwanie na drugiego gracz...</h1>
+    <h1 id="waitingTurn"></h1>
+    <div id="hud">
+        <div id="user-interface-block">
+            <h2>Status</h2>
+
+        </div>
+        <div id="login-center-block">
+            <h2>Logowanie</h2>
+            <input type="text" name="name" id="user-name" placeholder="Twój Nick">
+            <input onclick="game.LoginButtonClick()" class="login-button" type="button" value="Logowanie">
+            <input onclick="game.ResetButtonClick()" class="login-button" type="button" value="Reset">
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
